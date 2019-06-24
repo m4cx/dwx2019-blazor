@@ -1,0 +1,18 @@
+<div class="tile" @onclick="@OnClick">
+
+    <span class="oi @Tile.Icon"></span>
+    <p>@Tile.Name</p>
+</div>
+
+@using Microsoft.JSInterop
+@inject IJSRuntime JsRuntime;
+@code {
+
+    [Parameter]
+    public Tile Tile { get; set; }
+
+    private async Task OnClick()
+    {
+        await JsRuntime.InvokeAsync<object>("alert", $"Navigate to {Tile.Uri}");
+    }
+}

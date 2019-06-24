@@ -1,0 +1,30 @@
+/**
+ * @prop --og-list-Opacity: Overall opacity of the list
+ * @prop --og-list-Opacity--disabled: Overall opacity of the list when disabled.
+  */
+:host {
+  --og-list-Opacity: 1;
+  --og-list-Opacity--disabled: .5;
+  box-sizing: border-box;
+}
+:host *, :host *::before, :host *::after {
+  box-sizing: inherit;
+}
+
+:host([disabled]) {
+  --og-list-Opacity: var(--og-list-Opacity--disabled);
+}
+:host([disabled]) .og-list-item__content {
+  cursor: default;
+}
+
+.og-list {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  max-width: inherit;
+  max-height: inherit;
+  margin: 0px;
+  padding: 0px;
+  opacity: var(--og-list-Opacity);
+}

@@ -1,0 +1,20 @@
+@inject Blazor.Auth0.ClientSide.Authentication.AuthenticationService authService
+
+<div class="user-info">
+    <AuthorizeView>
+        <Authorizing>
+            <text>...</text>
+        </Authorizing>
+        <Authorized>
+            
+            <div>
+                <span class="oi oi-person"></span>
+                <span class="username">@context.User.Identity.Name</span>
+                <a class="sign-out" href="@authService.BuildLogoutUrl()">Sign out</a>
+            </div>
+        </Authorized>
+        <NotAuthorized>
+            <a href="@authService.BuildAuthorizeUrl()">Log in</a>
+        </NotAuthorized>
+    </AuthorizeView>
+</div>

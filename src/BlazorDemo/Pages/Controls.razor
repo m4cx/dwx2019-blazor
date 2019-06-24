@@ -1,0 +1,33 @@
+@page "/Controls"
+
+<h3>Cards</h3>
+
+<og-card name="Card Example">
+    <div slot="content">
+        <p>Card example with content and footer</p>
+    </div>
+    <div slot="footer">
+        <og-button label="OK"></og-button>
+    </div>
+</og-card>
+
+<h3>Input</h3>
+<og-card>
+    <!-- encapsulate inputs in form-item with label -->
+    <og-form-item #formItem label="Text Input">
+        <og-text-input>
+        </og-text-input>
+    </og-form-item>
+
+    <og-form-item label="Disabled Input" disabled>
+        <og-text-input></og-text-input>
+    </og-form-item>
+
+    <og-form-item label="Password Input">
+        <og-password-input></og-password-input>
+    </og-form-item>
+
+    <og-form-item label="Number Input">
+        <og-number-input></og-number-input>
+    </og-form-item>
+</og-card>

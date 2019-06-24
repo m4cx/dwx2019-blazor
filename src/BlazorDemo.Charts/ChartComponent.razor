@@ -1,0 +1,20 @@
+﻿<canvas id="@Id"></canvas>
+
+@using Microsoft.JSInterop
+@inject IJSRuntime JsRuntime;
+
+@functions {
+
+    [Parameter]
+    public string Id { get; set; }
+
+    protected override async Task OnAfterRenderAsync()
+    {
+        var type = "line";
+        var labels = new string[]
+        {
+            "January", "February", "March", "April", "May", "June", "July"
+            };
+        await JsRuntime.InvokeAsync<object>("createChart", Id, type, labels);
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "entries": [
+    "components/og-button/og-button.js",
+    "components/og-calendar/og-calendar.js",
+    "components/og-card/og-card.js",
+    "components/og-checkbox/og-checkbox.js",
+    "components/og-datatable/og-datatable.js",
+    "components/og-datepicker/og-datepicker.js",
+    "components/og-dialog/og-confirm-dialog/og-confirm-dialog.js",
+    "components/og-dialog/og-dialog.js",
+    "components/og-dialog/og-message-dialog/og-message-dialog.js",
+    "components/og-expander/og-expander.js",
+    "components/og-form-item/og-form-item.js",
+    "components/og-input/og-number-input/og-number-input.js",
+    "components/og-input/og-password-input/og-password-input.js",
+    "components/og-input/og-text-input/og-text-input.js",
+    "components/og-internal-calendar/og-internal-calendar.js",
+    "components/og-list-item/og-list-item.js",
+    "components/og-list/og-list.js",
+    "components/og-radio-button-group/og-radio-button-group.js",
+    "components/og-radio-button/og-radio-button.js",
+    "components/og-tab-container/og-tab-container.js",
+    "components/og-tab/og-tab.js",
+    "components/og-textarea/og-textarea.js",
+    "components/og-toggle-switch/og-toggle-switch.js",
+    "components/og-combobox/og-combobox.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "1.0.3",
+    "typescriptVersion": "3.5.1"
+  },
+  "collections": [],
+  "bundles": [
+    {
+      "components": []
+    }
+  ]
+}

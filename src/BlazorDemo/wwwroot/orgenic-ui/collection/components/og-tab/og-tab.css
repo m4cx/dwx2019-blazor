@@ -1,0 +1,14 @@
+:host {
+  box-sizing: border-box;
+}
+:host *, :host *::before, :host *::after {
+  box-sizing: inherit;
+}
+
+.og-tab {
+  display: none;
+}
+
+.og-tab[data-selected] {
+  display: block;
+}

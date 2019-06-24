@@ -1,0 +1,126 @@
+.og-theme--light {
+  --OG-COLOR-PRIMARY--0:          hsla(196, 76%, 100%, 1);
+  --OG-COLOR-PRIMARY--0--30:      hsla(196, 76%, 100%, .3);
+  --OG-COLOR-PRIMARY--0--50:      hsla(196, 76%, 100%, .5);
+  --OG-COLOR-PRIMARY--40:         hsla(196, 76%, 74%, 1);
+  --OG-COLOR-PRIMARY--80:         hsla(196, 76%, 56%, 1);
+  --OG-COLOR-PRIMARY--100:        hsla(196, 76%, 47%, 1);
+  --OG-COLOR-PRIMARY--100--15:    hsla(196, 76%, 47%, .15);
+  --OG-COLOR-PRIMARY--100--20:    hsla(196, 76%, 47%, .2);
+  --OG-COLOR-PRIMARY--100--25:    hsla(196, 76%, 47%, .25);
+  --OG-COLOR-PRIMARY--100--30:    hsla(196, 76%, 47%, .3);
+  --OG-COLOR-PRIMARY--100--50:    hsla(196, 76%, 47%, .5);
+  --OG-COLOR-PRIMARY--120:        hsla(196, 76%, 38%, 1);
+  --OG-COLOR-SECONDARY--0:          hsla(201, 41%, 100%, 1);
+  --OG-COLOR-SECONDARY--0--50:      hsla(201, 41%, 100%, .5);
+  --OG-COLOR-SECONDARY--100:        hsla(201, 41%, 40%, 1);
+  --OG-COLOR-SECONDARY--100--07:    hsla(201, 41%, 40%, .07);
+  --OG-COLOR-SECONDARY--100--10:    hsla(201, 41%, 40%, .1);
+  --OG-COLOR-SECONDARY--100--20:    hsla(201, 41%, 40%, .2);
+  --OG-COLOR-SECONDARY--100--30:    hsla(201, 41%, 40%, .3);
+  --OG-COLOR-SHADE--0:        hsla(200, 25%, 100%, 1);
+  --OG-COLOR-SHADE--0--20:    hsla(200, 25%, 100%, .2);
+  --OG-COLOR-SHADE--0--30:    hsla(200, 25%, 100%, .3);
+  --OG-COLOR-SHADE--0--80:    hsla(200, 25%, 100%, .8);
+  --OG-COLOR-SHADE--50:       hsla(200, 25%, 65%, 1);
+  --OG-COLOR-SHADE--70--50:   hsla(200, 25%, 51%, .5);
+  --OG-COLOR-SHADE--80--05:   hsla(200, 45%, 44%, .05);
+  --OG-COLOR-SHADE--100:      hsla(200, 25%, 30%, 1);
+  --OG-COLOR-SHADE--100--04:  hsla(200, 25%, 30%, .04);
+  --OG-COLOR-SHADE--100--10:  hsla(200, 25%, 30%, .1);
+  --OG-COLOR-SHADE--100--20:  hsla(200, 25%, 30%, .2);
+  --OG-COLOR-SHADE--100--30:  hsla(200, 25%, 30%, .3);
+  --OG-COLOR-SHADE--100--40:  hsla(200, 25%, 30%, .4);
+  --OG-COLOR-SHADE--100--50:  hsla(200, 25%, 30%, .5);
+  --OG-COLOR-SHADE--100--60:  hsla(200, 25%, 30%, .6);
+  --OG-COLOR-SHADE--100--80:  hsla(200, 25%, 30%, .8);
+  --OG-COLOR-SUCCESS--100:    hsla(112, 52%, 57%, 1);
+  --OG-COLOR-WARNING--100:    hsla(28, 100%, 50%, 1);
+  --OG-COLOR-ERROR--100:    hsla(353, 98%, 41%, 1);
+  --OG-COLOR-INFO--100:    hsla(212, 72%, 59%, 1);
+  --OG-BORDER-RADIUS:       3px;
+  --OG-BORDER-WIDTH:        1px;
+  --OG-FONT-COLOR:            hsl(0, 0%, 20%);
+  --OG-FONT-SIZE--H1:         48px;
+  --OG-FONT-SIZE--H2:         32px;
+  --OG-FONT-SIZE--H3:         24px;
+  --OG-FONT-SIZE--H4:         20px;
+  --OG-FONT-SIZE:             16px;
+  --OG-FONT-SIZE--S:          12px;
+  --OG-FONT-SIZE--XS:         10px;
+  --OG-FONT-WEIGHT--LIGHT:    200;
+  --OG-FONT-WEIGHT--BOOK:     300;
+  --OG-FONT-WEIGHT:           400;
+  --OG-FONT-WEIGHT--MEDIUM:   500;
+  --OG-FONT-WEIGHT--BOLD:     700;
+  --OG-FONT-WEIGHT--H1:       var(--OG-FONT-WEIGHT);
+  --OG-FONT-WEIGHT--H2:       var(--OG-FONT-WEIGHT);
+  --OG-FONT-WEIGHT--H3:       var(--OG-FONT-WEIGHT);
+  --OG-FONT-WEIGHT--H4:       var(--OG-FONT-WEIGHT);
+  --OG-MARGIN:     8px;
+  --OG-PADDING:    8px; }
+
+h1 {
+  font-size: var(--OG-FONT-SIZE--H1, 48px);
+  font-weight: var(--OG-FONT-WEIGHT--H1, normal);
+  line-height: var(--OG-FONT-SIZE--H1, 48px); }
+
+h2 {
+  font-size: var(--OG-FONT-SIZE--H2, 32px);
+  font-weight: var(--OG-FONT-WEIGHT--H2, normal);
+  line-height: var(--OG-FONT-SIZE--H2, 32px); }
+
+h3 {
+  font-size: var(--OG-FONT-SIZE--H3, 24px);
+  font-weight: var(--OG-FONT-WEIGHT--H3, normal);
+  line-height: var(--OG-FONT-SIZE--H3, 24px); }
+
+h4 {
+  font-size: var(--OG-FONT-SIZE--H4, 20px);
+  font-weight: var(--OG-FONT-WEIGHT--H4, normal);
+  line-height: var(--OG-FONT-SIZE--H4, 20px); }
+
+h5,
+h6 {
+  font-size: var(--OG-FONT-SIZE, 16px);
+  font-weight: var(--OG-FONT-WEIGHT, bolder); }
+
+p {
+  font-size: var(--OG-FONT-SIZE, 16px);
+  font-weight: var(--OG-FONT-WEIGHT, normal); }
+
+small,
+sub,
+sup {
+  font-size: var(--OG-FONT-SIZE--S, 12px); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 32px 0 16px 0; }
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+p:first-child {
+  margin-top: 0; }
+
+p {
+  margin: 16px 0; }
+
+dl,
+ol,
+ul {
+  margin: 16px 0; }
+
+.og-theme--light {
+  background: radial-gradient(circle at 75% 85%, rgba(252, 253, 242, 0.35), rgba(77, 210, 255, 0.65) 30%, rgba(74, 177, 211, 0.05) 50%) fixed, radial-gradient(circle at 15% 25%, rgba(117, 235, 250, 0.95), rgba(47, 168, 208, 0.65) 30%) fixed;
+  color: var(--OG-FONT-COLOR); }

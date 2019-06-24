@@ -1,0 +1,112 @@
+/**
+ * @prop --og-button-Background: Main background color of the button
+ * @prop --og-button-Background--active: Background color when the button is clicked
+ * @prop --og-button-Background--disabled: Background color when the button is disabled
+ * @prop --og-button-Background--hover: Background color when the button is hovered
+ * @prop --og-button-BorderRadius: Border radius of the button
+ * @prop --og-button-Color: Text color of the button label
+ * @prop --og-button-Color--active: Text color when the button is clicked
+ * @prop --og-button-Color--disabled: Text color when the button is disabled
+ * @prop --og-button-Color--hover: Text color when the button is hovered
+ */
+:host {
+  --Display: inline-block;
+  --Width: auto;
+  --MaxWidth: inherit;
+  --Height: auto;
+  --MaxHeight: inherit;
+  --Padding: var(--PADDING, 0.75rem 1.5rem);
+  --BorderWidth: 1px;
+  --BorderStyle: solid;
+  --BorderColor: transparent;
+  --og-button-BorderRadius: var( --OG-BORDER-RADIUS, 3px);
+  --og-button-Background: var(--OG-COLOR-SECONDARY--100--20, rgba(51, 51, 51, 0.2));
+  --og-button-Background--hover: var(--OG-COLOR-SECONDARY--100--30, rgba(51, 51, 51, 0.3));
+  --og-button-Background--active: var(--OG-COLOR-SECONDARY--100--10, rgba(51, 51, 51, 0.1));
+  --og-button-Background--disabled: var(--OG-COLOR-SECONDARY--100--07, rgba(51, 51, 51, 0.07));
+  --og-button-Color: var(--OG-COLOR-SHADE--100, #395360);
+  --og-button-Color--hover: var(--OG-COLOR-SHADE--100, #395360);
+  --og-button-Color--active: var(--OG-COLOR-SHADE--100, #395360);
+  --og-button-Color--disabled: var(--OG-COLOR-SHADE--100--30, rgba(57, 83, 96, 0.3));
+  --og-button-FontWeight: var(--OG-FONT-WEIGHT--MEDIUM, 500);
+  --BoxShadow: var(--og-button-BoxShadow);
+  --FontFamily: var(--og-button-FontFamily, inherit);
+  --FontSize: var(--og-button-FontSize, inherit);
+  --Outline: none;
+  --TextTransform: uppercase;
+  display: var(--Display);
+  width: var(--Width);
+  min-width: var(--MinWidth);
+  max-width: var(--MaxWidth);
+  height: var(--Height);
+  max-height: var(--maxHeight);
+  font-family: var(--FontFamily);
+  font-size: var(--FontSize);
+  font-weight: var(--og-button-FontWeight, normal);
+  user-select: none;
+  box-sizing: border-box;
+}
+:host *, :host *::before, :host *::after {
+  box-sizing: inherit;
+}
+
+:host([data-context~=workflow]) {
+  --og-button-Background: var(--OG-COLOR-PRIMARY--100, #1da2d3);
+  --og-button-Background--hover: var(--OG-COLOR-PRIMARY--120, #1783ab);
+  --og-button-Background--active: var(--OG-COLOR-PRIMARY--80, #3ab7e4);
+  --og-button-Background--disabled: var(--OG-COLOR-PRIMARY--100--30, rgba(29, 162, 211, 0.3));
+  --og-button-Color: var(--OG-COLOR-SHADE--0, white);
+  --og-button-Color--hover: var(--OG-COLOR-SHADE--0, white);
+  --og-button-Color--active: var(--OG-COLOR-SHADE--0, white);
+  --og-button-Color--disabled: var(--OG-COLOR-SHADE--0--30, rgba(255, 255, 255, 0.3));
+}
+
+:host([data-context~=link]) {
+  --og-button-Background: transparent;
+  --og-button-Background--hover: var(--OG-COLOR-SHADE--100--30, rgba(57, 83, 96, 0.3));
+  --og-button-Background--active: var(--OG-COLOR-SHADE--100--10, rgba(57, 83, 96, 0.1));
+  --og-button-Background--disabled: transparent;
+  --og-button-Color: var(--OG-COLOR-SHADE--100, #395360);
+  --og-button-Color--hover: var(--OG-COLOR-SHADE--100, #395360);
+  --og-button-Color--active: var(--OG-COLOR-SHADE--100, #395360);
+  --og-button-Color--disabled: var(--OG-COLOR-SHADE--100--30, rgba(57, 83, 96, 0.3));
+}
+
+.og-button {
+  display: block;
+  width: 100%;
+  max-width: inherit;
+  height: 100%;
+  max-height: inherit;
+  padding: var(--Padding);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  background: var(--og-button-Background);
+  border: var(--BorderWidth) var(--BorderStyle) var(--BorderColor);
+  border-radius: var(--og-button-BorderRadius);
+  color: var(--og-button-Color);
+  text-transform: var(--TextTransform);
+  transition-duration: 150ms;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out;
+}
+.og-button:focus {
+  outline: none;
+}
+.og-button:hover {
+  --og-button-Background: var(--og-button-Background--hover);
+  --og-button-Color: var(--og-button-Color--hover);
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+.og-button:active {
+  --og-button-Background: var(--og-button-Background--active);
+  --og-button-Color: var(--og-button-Color--active);
+  transition-duration: 300ms;
+}
+.og-button:disabled {
+  --og-button-Background: var(--og-button-Background--disabled);
+  --og-button-Color: var(--og-button-Color--disabled);
+  cursor: default;
+}

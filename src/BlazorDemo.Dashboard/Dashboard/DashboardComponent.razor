@@ -1,0 +1,30 @@
+﻿
+
+<div class="my-component">
+    @if (Tiles == null)
+    {
+        <h1>LOADING...</h1>
+    }
+    else
+    {
+        @foreach (var tile in Tiles)
+        {
+            <TileComponent Tile="@tile" />
+        }
+    }
+</div>
+
+@using BlazorDemo.Dashboard.Tile
+
+@inject System.Net.Http.HttpClient httpClient
+
+@code {
+
+    public IEnumerable<Tile> Tiles { get; private set; }
+
+    protected override async Task OnInitAsync()
+    {
+        Tiles = await httpClient.GetJsonAsync<List<Tile>>("data/dashboard.json");
+    }
+}
+
